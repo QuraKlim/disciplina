@@ -1,0 +1,43 @@
+.promo {
+    height: 980px;
+    background: url('../img/bgs/main_bg.jpg') center/cover no-repeat;
+    padding-top: 230px;
+    text-align: center;
+    &_logo {
+        img {
+            max-width: 800px;
+            height: 100%;
+        }
+    }
+    &_links {
+        display: flex;
+        max-width: 837px;
+        justify-content: space-between;
+        margin: 0 auto;
+        margin-top: 100px;
+    }
+    &_link {
+        font-size: 40px;
+        color: #A7A7A7;
+        text-decoration: none;
+        &:hover {
+            color: $main-color;
+        }
+    }
+}
+
+@media (max-width: 1023px) {
+    .promo {
+        padding: 50px 0;
+        height: auto;
+        &_logo {
+            img {
+                height: 200px;
+                width: auto;
+            }
+        }
+        &_link {
+            font-size: 25px;
+        }
+    }
+}

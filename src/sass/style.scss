@@ -1,0 +1,49 @@
+@import 'libs/bootstrap-reboot.min';
+@import 'libs/fonts';
+@import 'base/mixins';
+@import 'base/variables';
+@import 'blocks/promo';
+@import 'blocks/desiers';
+@import 'blocks/btn';
+@import 'blocks/our-works';
+@import 'blocks/artists';
+@import 'blocks/join';
+@import 'blocks/contacts';
+@import 'blocks/feedback';
+@import 'blocks/thanks';
+@import 'blocks/contents';
+@import 'blocks/individual';
+@import 'blocks/patterns';
+@import 'blocks/freedom';
+@import 'blocks/artist';
+
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    width: calc(100% - 120px);
+    margin: 0 auto;
+    height: 100%;
+}
+
+h1 {
+    font-size: 56px;
+    color: #2B2B2B;
+    letter-spacing: 0.008em;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: 34px;
+    line-height: 140%;
+    color: #605F5F;
+}
+
+.overflow {
+    overflow: hidden;
+}
+
+body {
+    background: url('../img/bgs/big_bg.jpg') center/cover no-repeat;
+}

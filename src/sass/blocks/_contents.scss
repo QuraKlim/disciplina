@@ -1,0 +1,156 @@
+.contents {
+    .container {
+        .links {
+            height: 200px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .pages {
+                width: 54%;
+                display: flex;
+                justify-content: space-between;
+                align-items:center;
+                a {
+                    text-decoration: none;
+                    img {
+                        &:hover {
+                            transform: scale(1.1);
+                        }
+                    }
+                    h2 {
+                        font-size: 27px;
+                        &:hover {
+                            color: rgb(216, 16, 173);
+                            transform: scale(1.1);
+                        }
+                    }
+                }
+                .active_link {
+                    color: rgb(216, 16, 173);
+                    transform: scale(1.1);
+                }
+            }
+            .social {
+                display: flex;
+                justify-content: space-between;
+                width: 23%;
+                a {
+                    /* margin-left: 30px; */
+                    text-decoration: none;
+                    align-self: center;
+                    img {
+                        width: 50px;
+                        height: 50px;
+                        &:hover {
+                            transform: scale(1.1);
+                        }
+                    }
+                    h2 {
+                        font-size: 27px;
+                        &:hover {
+                            transform: scale(1.1);
+                        }
+                    }
+                }
+                
+            }
+        }
+    }
+    .wrapper, .professionals {
+        width: 100%;
+        height: 640px;
+        background: url('../img/bgs/masterpiece_bg.jpg') center/cover no-repeat;
+        .container {
+            display: flex;
+            h2 {
+                text-transform: uppercase;
+                font-weight: 300;
+                align-self: center;
+                font-size: 64px;
+                line-height: 88px;
+                letter-spacing: 0.178em;
+                color: #CFCFCF; 
+            }
+        }    
+    }
+    .professionals {
+        background: url('../img/photos/team.jpg') center/cover no-repeat;
+        .container {
+            h2 {
+                color: #2B2B2B;
+                text-align: center;
+            }
+        }
+    }
+}
+
+@media (max-width: 1439px) {
+    .contents {
+        .container {
+            .links {
+                .pages {
+                    width: 70%;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1150px) {
+    .contents {
+        .container {
+            .links {
+                .pages {
+                    a {
+                        h2 {
+                            font-size: 23px;
+                        }
+                        img {
+                            width: 170px;
+                            height: 125px;
+                        }
+                    }
+                }
+                .social {
+                    a {
+                        h2 {
+                            font-size: 23px;
+                        }
+                        img {
+                            height: 35px;
+                            width: 35px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 940px) {
+    .contents {
+        .container {
+            .links {
+                display: block;
+                margin-top: 20px;
+                .pages {
+                    width: 100%;
+                }
+                .social {
+                    width: 35%;
+                    margin-top: -25px;
+                    margin-left: -8px;
+                }
+            }
+        }
+        .wrapper, .professionals {
+            height: 400px;
+            .container {
+                h2 {
+                    font-size: 30px;
+                    line-height: 60px;
+                }
+            }
+        }
+    }
+}

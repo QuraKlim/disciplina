@@ -1,0 +1,77 @@
+.feedback {
+    background: url('../img/bgs/share_bg.jpg') center/cover no-repeat;
+    height: 100vh;
+    width: 100%;
+    padding: 100px 0;
+    position: fixed;
+    z-index: 50;
+    top: 0;
+    overflow: auto;
+
+    .container {
+        position: relative;
+        .wrapper {
+            h1 {
+                font-style: 48px;
+                letter-spacing: 0.155em;
+                color: white;
+                text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+                text-align: center;
+                margin: 0 30px;
+            }
+            #personInfo {
+                width: 480px;
+                margin: 0 auto;
+                margin-top: 70px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                color: white;
+                input {
+                    background-color: rgba(0, 0, 0, 0);
+                    border: none;
+                    border-bottom: solid #fff 1px;
+                    color: white;
+                    font-family:inherit;
+                    font-size: 40px;
+                    margin-top: 20px;
+                    &::-moz-placeholder { color: white; }
+                    &::-webkit-input-placeholder { color: white; }
+                }
+                #submit {
+                    border: none;
+                    margin-top: 100px;
+                    height: 133px;
+                    width: 227px;
+                }
+            }
+            
+        } 
+    }
+}
+
+.active {
+    display: block;
+}
+
+.hide {
+    display: none;
+}
+
+@media (max-width: 1023px) {
+    .feedback {
+        h1 {
+            font-size: 30px;
+        }
+        #personInfo {
+            input {
+                &::placeholder {
+                    font-size: 25px;
+                }
+            }
+            #submit {
+                margin-top: 50px;
+            }
+        }
+    }
+}

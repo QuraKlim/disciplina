@@ -1,0 +1,51 @@
+.join {
+    background: url('../img/bgs/join_us.jpg') center/cover no-repeat;
+    height: 950px;
+    .wrapper {
+        padding: 200px 0 218px 0;
+        width: 530px;
+        h1 {
+            color: #A7A7A7;
+            font-size: 40px;
+            line-height: 140%;
+            letter-spacing: -0.037em;
+        }
+        h2 {
+            margin-top: 80px;
+            color: #A7A7A7;
+            font-size: 40px;
+            line-height: 140%;
+            letter-spacing: -0.037em;
+        }
+    }
+}
+
+@media (max-width: 1300px) {
+    .join {
+        background: url('../img/bgs/bright_bg.jpg') center/cover no-repeat;
+        .container {
+            .wrapper {
+                h1, h2 {
+                    color: black;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1023px) {
+    .join {
+        height: 450px;
+        .container {
+            .wrapper {
+                margin: 0 auto;
+                text-align: center;
+                padding: 30px 0;
+                h1, h2 {
+                    color: black;
+                    font-size: 30px;
+                }
+            }
+        }
+    }
+}

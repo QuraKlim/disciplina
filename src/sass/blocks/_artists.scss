@@ -1,0 +1,91 @@
+.artists {
+    background: url('../img/bgs/artists_bg.jpg') center/cover no-repeat;
+    min-height: 950px;
+    .wrapper {
+        min-height: 950px;
+        position: relative;
+        .artists_texts {
+            padding: 256px 0 0 0;
+            height: 800px;
+            width: 640px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: flex-start;
+            .btn_red {
+                width: 530px;
+                height: 160px;
+            }
+        }
+        .artists_photo {
+            width: 600px;
+            position: absolute;
+            bottom: 0;
+            right: 1%;
+            background: url('../img/photos/rectangle.png') no-repeat;
+            background-size: 600px;
+            &:hover {
+                background: url('../img/photos/rectangle_photo.png') no-repeat;
+                background-size: 600px;
+            }
+        }
+    }
+}
+
+@media (max-width: 1299px) {
+    .artists {
+        .container {
+            .wrapper {
+                .artists_photo {
+                    position: relative;
+                    right: auto;
+                    bottom: auto;
+                    margin: 0 auto;
+                    margin-top: 60px;
+                }
+                .artists_texts {
+                    align-items: center;
+                    margin: 0 auto;
+                    padding-top: 30px;
+                    height: 500px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1023px) {
+    .artists {
+        .container {
+            .wrapper {
+                .artists_photo {
+                    position: relative;
+                    right: auto;
+                    bottom: auto;
+                    margin: 0 auto;
+                    margin-top: 60px;
+                }
+                .artists_texts {
+                    align-items: center;
+                    margin: 0 auto;
+                    padding-top: 30px;
+                    height: 350px;
+                    h1, h2 {
+                        font-size: 25px;
+                    }
+                    button {
+                        font-size: 25px;
+                        width: 400px;
+                        height: 115px;
+                    }
+                }
+                .artists_photo {
+                    height: 732px;
+                    img {
+                        transform: scale(0.7);
+                    }
+                }
+            }
+        }
+    }
+}

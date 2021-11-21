@@ -1,0 +1,65 @@
+.btn_red {
+    background: $main_color;
+    border: 2px solid #282828;
+    font-size: 28px;
+    letter-spacing: 0.32em;
+    color: #fff;
+    &:hover {
+        background-color: rgb(0, 0, 0);
+    }
+}
+
+.btn_grey {
+    background: rgba(19, 19, 19, 0.05);
+    border: 2px solid #2B2B2B;
+    text-transform: uppercase;
+    color: #2B2B2B;
+    letter-spacing: 0.32em;
+    &:hover {
+        background-color: rgba(131, 131, 130, 0.692);
+    }
+}
+
+.close_btn {
+    color: rgb(207, 49, 49);
+    font-size: 30px;
+    position: absolute;
+    right: 0;
+    top: -5px;
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.btns {
+    height: 500px;
+    .container {
+        .wrapper {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            button {
+                height: 160px;
+                width: 720px;
+                margin-top: 150px;
+                a {
+                    display: block;
+                    text-decoration: none;
+                    font-size: 30px;
+                    line-height: 160px;
+                    letter-spacing: 0.32em;
+                    color: #2B2B2B;
+                    height: 100%;
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1400px) {
+    .btns {
+        button, a {
+            font-size: 24px !important;
+        }
+    }
+}

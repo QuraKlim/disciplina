@@ -1,0 +1,63 @@
+.freedom {
+    margin-top: 120px;
+    height: 1350px;
+    display: flex;
+    justify-content: space-between;
+    overflow-x: auto;
+    overflow-y: hidden;
+    /* &::-webkit-scrollbar {
+        display: none;
+    } */
+    .wrapper {
+        height: 100%;
+        width: 855px;
+        margin-right: 85px;
+        .watermelon {
+            height: 860px;
+        }
+        .titles {
+            width: 570px;
+            text-align: center;
+            margin: 0 auto;
+            margin-top: 70px;
+            h2 {
+                margin-top: 70px;
+            }
+        }
+    }
+    .mountains {
+        margin-right: 85px;
+    }
+    .china {
+        height: 100%;
+    }
+}
+
+@media (max-width: 1400px) {
+    .freedom {
+        height: 700px;
+        .wrapper {
+            margin-right: 20px;
+            .watermelon {
+                height: 65%;
+            }
+            .titles {
+                width: 420px;
+                margin-top: 50px;
+                h1 {
+                    font-size: 30px;
+                }
+                h2 {
+                    font-size: 27px;
+                    margin-top: 20px;
+                    width: 100%;
+                }
+            }
+            
+        }
+        img {
+            height: 100%;
+        }
+
+    }
+}
